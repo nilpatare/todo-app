@@ -4,7 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo-App</title>
-  
+  <style>
+    body{
+      background-color: rgb(207, 220, 232);
+    }
+    .heading {
+      text-align: center;
+    }
+    .todo-item {
+      border: 2px solid black;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 5px;
+      background-color: #ccddff;
+      color: #0055ff;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .btn-del {
+      background-color: tomato;
+      color: white;
+      font-size: 13px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      height: 18px;
+    }
+
+    .tasks-container {
+      height: 250px;
+      overflow-y: scroll;
+    }
+
+    .task-input-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 10px;
+    }
+
+    .task-input {
+      width: 50%;
+      border-radius: 10px;
+      padding: 5px 10px;
+      font-size: 20px;
+      border: 1px solid #0055ff;
+    }
+    
+    .task-input:hover{
+      box-shadow:0 0 5px 2px grey;
+      transition: 0.3s;
+    }
+    .btn-add {
+      border-radius: 1px 10px 1px 10px;
+      background-color: #0055ff;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-add:hover{
+      box-shadow:0 0 7px 2px grey;
+      transition: 0.3s;
+    }
+  </style>
 </head>
 <body>
     <h1 class="heading">ToDo App</h1>
